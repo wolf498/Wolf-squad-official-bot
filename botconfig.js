@@ -1,12 +1,12 @@
 module.exports = {
-  Admins: ["866383640648351754", "252912731664023553"], //Admins of the bot
+  Admins: ["", ""], //Admins of the bot
   ExpressServer: true, //If you wanted to make the website run or not
   DefaultPrefix: process.env.Prefix || "WS", //Default prefix, Server Admins can change the prefix
   Port: 3000, //Which port website gonna be hosted
   SupportServer: "https://discord.gg/sbySMS7m3v", //Support Server Link
-  Token: process.env.Token || "OTE4NjEzNDU5MDIzODMxMDUx.YbJzcw.1xSl4a98c7f7_sv-FbYawOD-TeM", //Discord Bot Token
-  ClientID: process.env.Discord_ClientID || "918613459023831051", //Discord Client ID
-  ClientSecret: process.env.Discord_ClientSecret || "C_3WjZePpAQTDgKprUJN9tcH4TajowQ7", //Discord Client Secret
+  Token: process.env.Token || "", //Discord Bot Token
+  ClientID: process.env.Discord_ClientID || "", //Discord Client ID
+  ClientSecret: process.env.Discord_ClientSecret || "", //Discord Client Secret
   Scopes: ["identify", "guilds", "applications.commands"], //Discord OAuth2 Scopes
   ServerDeafen: true, //If you want bot to stay deafened
   DefaultVolume: 100, //Sets the default volume of the bot, You can change this number anywhere from 1 to 100
@@ -21,7 +21,7 @@ module.exports = {
   
   Presence: {
     status: "online", // You can show online, idle, and dnd
-    name: "merry christmas plix is WS", // The message shown
+    name: "", // The message shown
     type: "WATCHING", // PLAYING, WATCHING, LISTENING, STREAMING
   },
 
