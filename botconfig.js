@@ -1,12 +1,12 @@
 module.exports = {
-  Admins: ["866383640648351754", "252912731664023553"], //Admins of the bot
+  Admins: ["admin id", "admin id"], //Admins of the bot
   ExpressServer: true, //If you wanted to make the website run or not
-  DefaultPrefix: process.env.Prefix || "WS", //Default prefix, Server Admins can change the prefix
+  DefaultPrefix: process.env.Prefix || "your prefix", //Default prefix, Server Admins can change the prefix
   Port: 3000, //Which port website gonna be hosted
-  SupportServer: "https://discord.gg/sbySMS7m3v", //Support Server Link
-  Token: process.env.Token || "OTE4NjEzNDU5MDIzODMxMDUx.YbJzcw.bRLHxAx-QPd1WPk3qFZJNGgAF04", //Discord Bot Token
-  ClientID: process.env.Discord_ClientID || "918613459023831051", //Discord Client ID
-  ClientSecret: process.env.Discord_ClientSecret || "uqB3C7v6XgoThPBg3hYREwvVKCPBIOuo", //Discord Client Secret
+  SupportServer: "SupportServer", //Support Server Link
+  Token: process.env.Token || "your token", //Discord Bot Token
+  ClientID: process.env.Discord_ClientID || "ClientID", //Discord Client ID
+  ClientSecret: process.env.Discord_ClientSecret || "ClientSecret", //Discord Client Secret
   Scopes: ["identify", "guilds", "applications.commands"], //Discord OAuth2 Scopes
   ServerDeafen: true, //If you want bot to stay deafened
   DefaultVolume: 100, //Sets the default volume of the bot, You can change this number anywhere from 1 to 100
@@ -21,22 +21,22 @@ module.exports = {
   
   Presence: {
     status: "online", // You can show online, idle, and dnd
-    name: "merry christmas plix is WS", // The message shown
+    name: "", // The message shown
     type: "WATCHING", // PLAYING, WATCHING, LISTENING, STREAMING
   },
 
   //Lavalink
   Lavalink: {
     id: "Main",
-    host: "lavalink.pumpdev.org",
-    port: 3876, // The port that lavalink is listening to. This must be a number!
-    pass: "pumpisfree",
+    host: "lavalink",
+    port: 80, // The port that lavalink is listening to. This must be a number!
+    pass: "password",
     secure: false, // Set this to true if the lavalink uses SSL or you're hosting lavalink on repl.it
   },
 
   //Please go to https://developer.spotify.com/dashboard/
   Spotify: {
-    ClientID: process.env.Spotify_ClientID || "66f7ef5df17e4c7f8c71d9aae8c13dc6", //Spotify Client ID
-    ClientSecret: process.env.Spotify_ClientSecret || "e4974d1051054f139768ea9be93a6613", //Spotify Client Secret
+    ClientID: process.env.Spotify_ClientID || "", //Spotify Client ID
+    ClientSecret: process.env.Spotify_ClientSecret || "", //Spotify Client Secret
   },
 };
